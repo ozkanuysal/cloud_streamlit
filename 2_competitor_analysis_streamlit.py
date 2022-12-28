@@ -236,9 +236,9 @@ similar_products_df2 = pd.DataFrame()
 model_id = "openai/clip-vit-base-patch32"
 
 # we initialize a tokenizer, image processor, and the model itself
-tokenizer = CLIPTokenizerFast.from_pretrained(model_id)
-processor = CLIPProcessor.from_pretrained(model_id)
-model = CLIPModel.from_pretrained(model_id).to(device)
+#tokenizer = CLIPTokenizerFast.from_pretrained(model_id)
+#processor = CLIPProcessor.from_pretrained(model_id)
+#model = CLIPModel.from_pretrained(model_id).to(device)
 
 #  def image_title_dataset(titles, images, user_product_title, user_product_image):
 def image_title_dataset(user_product_title, user_product_description, user_product_line, user_product_id, user_product_image_path, titles, images):
